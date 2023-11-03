@@ -1,0 +1,194 @@
+
+GIT AND GITHUB
+They are related to each other, but they are different
+
+Github
+______
+is a Cloud based website OR hosting server 
+   [WEBSITE]LOCAL SERVER/HOST MEANS You are the only person who have access to the website
+            -------------
+             YOUR SYSTEM
+
+These are the concepts It is not related to any programming language
+Github Is basically one type of website where we basically host our projects, source code and various types of files.
+Github Can be useful in maintaining the source CODEThat means it allows to make changes in the source code
+Github works in remote server.Github is a open source For collaborative purposes.
+ Git is a software tool designed for version control. Git work is to keep the track of all changes
+Without Git we cannot use Github
+Github Works on remote server and Git works on local server
+                                  [Project folder]Working Directory--->(Staging area)It is a place FROM where GIT starts its tracking--->[local repository]FOLDER--->ComMIt history.
+https://git-scm.com/downloads
+https://git-scm.com/download/win
+https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe
+cmd command
+git --version
+program file --> GIT
+c:\Program Files\Git
+https://github.com/
+E:\First Project
+First Project Folder ---> Working directory ---> local system --->SSD--->E Drive
+
+PS C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project>
+litral: saying is that it(file) is in the state of working directory,it is not yet changed/converted into remote or local repository
+Until the file changed/converted into remote or local repository,it is not posiible to access through git
+TO converted into remote or local repository,WE use this command
+git init
+
+PS C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project>git init 
+Initialized empty Git repository in C:/Users/Sumanta Bhattacharya/OneDrive/Documents/Desktop/First Project/.git/
+PS C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project> git init
+Reinitialized existing Git repository in C:/Users/Sumanta Bhattacharya/OneDrive/Documents/Desktop/First Project/.git/
+C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project
+
+PS C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project> git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+___________________________________________________________________________
+By default, the branch which is created in Github is called master branch.
+We will always work on main branch.
+---------------------------------------------------------------------
+
+TO not converted into remote or local repository,WE use this command
+Remove-Item -Recurse -Force .git
+
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\Sumanta Bhattacharya> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\Sumanta Bhattacharya>
+
+
+
+
+What specific features are you interested in using?
+Select all that apply so we can point you to the right GitHub plan.
+
+
+GitHub Collaboration Icon
+Collaborative coding
+Codespaces, Pull requests, Notifications, Code review, Code review assignments, Code owners, Draft pull requests, Protected branches, and more.
+
+GitHub Automation and CI/CD Icon
+Automation and CI/CD
+Actions, Packages, APIs, GitHub Pages, GitHub Marketplace, Webhooks, Hosted runners, Self-hosted runners, Secrets management, and more.
+
+GitHub Security Icon
+Security
+Private repos, 2FA, Required reviews, Required status checks, Code scanning, Secret scanning, Dependency graph, Dependabot alerts, and more.
+
+Enterprise security
+SAML, LDAP, IP allow list, GitHub Connect, and Audit log API.
+
+GitHub Client Apps Icon
+Client Apps
+GitHub Mobile, GitHub CLI, and GitHub Desktop.
+
+GitHub Project Management Icon
+Project Management
+Projects, Labels, Milestones, Issues, Unified Contribution Graph, Org activity graph, Org dependency insights, Repo insights, Wikis, and GitHub Insights.
+
+GitHub Team Administration Icon
+Team Administration
+Organizations, Invitations, Team sync, Custom roles, Domain verification, Audit Log API, Repo creation restriction, and Notification restriction.
+
+GitHub Community Icon
+Community
+GitHub Marketplace, GitHub Sponsors, GitHub Skills, and Electron.
+
+U untracked
+PS C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        xyz.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+PS C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project> git add xyz.txt
+A index added means it has been entered into local repositary
+PS C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   xyz.txt
+
+red untracted
+green tracked
+
+if we delete the file from the folder
+PS C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   xyz.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    xyz.txt
+
+another way to transfer from the local repository to working directory but not deleted
+PS C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project> git rm --cached xyz.txt
+rm 'xyz.txt'
+converted to U from A
+PS C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        xyz.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+now we can delete it from the folder
+first method The history was remained, but in the second method, the history was deleted
+
+cls/clear to clear the terminal
+
+PS C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project> git commit -m "my first commit"
+[master (root-commit) 85231d7] my first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 MyCode.txt
+
+ PS C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project> git init -b main                
+Initialized empty Git repository in C:/Users/Sumanta Bhattacharya/OneDrive/Documents/Desktop/First Project/.git/
+
+PS C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\First Project> git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+git init(to initialise to local repository from woking directory(to add .git))
+Remove-Item -Recurse -Force .git
+git status
+git add file.txt
+git rm --cached file.txt
+git init -b main (to change it from the branch master to main)
+
+we will work in the main branch
+
+*/
+
+                            
+
