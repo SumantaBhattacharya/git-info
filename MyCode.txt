@@ -56,7 +56,6 @@ We will always work on main branch.
 TO not converted into remote or local repository,WE use this command
 Remove-Item -Recurse -Force .git
 
-
 Windows PowerShell
 Copyright (C) Microsoft Corporation. All rights reserved.
 
@@ -65,9 +64,6 @@ Install the latest PowerShell for new features and improvements! https://aka.ms/
 PS C:\Users\Sumanta Bhattacharya> git status
 fatal: not a git repository (or any of the parent directories): .git
 PS C:\Users\Sumanta Bhattacharya>
-
-
-
 
 What specific features are you interested in using?
 Select all that apply so we can point you to the right GitHub plan.
@@ -207,6 +203,117 @@ These are essential Git commands for initializing a repository, managing changes
 YO
 
 The git log command is a useful tool for reviewing the history of changes in your Git repository, tracking who made each commit, and understanding the order and content of those commits.
+
+ Git 
+Version Control System in a tools that helps to track changes in code
+Git is a version Control System 
+It is free,popular,Open source,fast and scalable.
+advantages
+track the history
+collaborative 
+
+Github
+
+Website that allows devlopers to store and manage their code using Git
+https://github.com
+
+Github Account 
+Create a new respository: apnacollege-demo
+Make our first commit
+
+Setting up Git
+
+Visual studio code
+Windows(Git Bash)
+Mac(Terminal)
+
+Configuring Git
+
+git config --global user.name "My Name"
+git config --global user.email "<EMAIL>"
+git config --list
+
+git --version
+global user.name "SumantaBhattacharya"
+global user.email "sumanta2004@gmail.com"
+list
+
+Clone -  Cloning a repository on our local machine
+git clone <- some link ->
+status - displays the state of the code
+git status
+
+Add & Commit
+add-adds new or changed files in your working directory to the Git staging area
+git add<- file name ->
+commit- it is the record of change
+git commit -m "some message"
+
+git clone https://github.com/SumantaBhattacharya/git-info.git
+
+cd-change directory
+cd .\GITDEMO
+cd .\git-info
+clear
+ls
+Get-ChildItem -Force
+
+git clone https://github.com/SumantaBhattacharya/git-info.git
+
+Cloning into 'git-info'...
+remote: Enumerating objects: 37, done.
+remote: Counting objects: 100% (37/37), done.
+remote: Compressing objects: 100% (25/25), done.
+remote: Total 37 (delta 10), reused 28 (delta 6), pack-reused 0
+Receiving objects: 100% (37/37), 7.54 KiB | 1.88 MiB/s, done.
+Resolving deltas: 100% (10/10), done.
+
+cd .\GITDEMO
+ls
+
+Directory: C:\Users\Sumanta Bhattacharya\OneDrive\Documents\Desktop\WD\GITDEMO
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+la---          12-02-2024    11:49                git-info
+
+cd .\git-info
+ls
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+la---          12-02-2024    11:49            250 INTRO.txt
+la---          12-02-2024    11:49           9039 MyCode.txt
+la---          12-02-2024    11:49            112 Name.txt
+la---          12-02-2024    11:49             50 README.md
+
+M-modified
+U-untracked
+
+meanings:
+untracked 
+new files that git doesn't yet track
+modified
+changed
+staged
+file is ready to be committed
+unmodified
+unchanged
+
+add-adds new or changed files in your working directory to the Git staging area
+git add INTRO.txt
+git add .(for all)
+git commit -m "Remove INTRO.txt"
+git branch
+git push origin main
+
+git branch
+* main
+
+to delete files in your working directory
+git add Name.txt 
+git commit -m "Remove INTRO.txt"
+git branch 
+git push origin main
 */
 
                             
