@@ -264,11 +264,21 @@ Branch commands
 git brach (to check branch)
 git branch machine -M main (to rename branch )
 git checkout branch_name -> (to navigate,change branch)
-git checkout -b <- new_branch_name -> (to create new branch)
+git checkout -b new_branch_name -> (to create new branch)
 git branch -d branch_name -> (to delete branch)
 git branch -a (to get how many git branches are there in your system)
 git branch machine -M main (to rename branch )
 git branch machine -M main main
+
+Merging Codeway 1
+git diff <- branch name -> (to compare commits,branches,files and more)
+git merge <- branch name -> (to merge 2 branches)
+
+way 2
+create a PR
+
+if you want to get the differences between the two branches, then you can use the following command 
+git diff the_branch_name_that_you_want_to_comapre_with  
 
 to create a new folder in the working directory i.e MyCode
 mkdir folder.name
