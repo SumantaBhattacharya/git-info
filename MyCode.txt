@@ -252,11 +252,38 @@ Push command
 push-upload local repo content to rtemote repogit push origin main
 git push origin main
 
+Init command
+init- used to create a new git repository
+git initgit remote add origin <-link->
+git remote -v (to verify remote)
+git branch (to check branch )
+git branch machine -M main (to rename branch )
+git puch origin main
+
+Branch commands
+git brach (to check branch)
+git branch machine -M main (to rename branch )
+git checkout branch_name -> (to navigate,change branch)
+git checkout -b <- new_branch_name -> (to create new branch)
+git branch -d branch_name -> (to delete branch)
+git branch -a (to get how many git branches are there in your system)
+git branch machine -M main (to rename branch )
+git branch machine -M main main
+
+to create a new folder in the working directory i.e MyCode
+mkdir folder.name
+
+mkdir localrepo
+cd localrepo
+git init (to make it get repository)
+
+
 git clone https://github.com/SumantaBhattacharya/git-info.git
 
 cd-change directory
 cd .\GITDEMO
 cd .\git-info
+cd ..
 clear
 ls
 Get-ChildItem -Force
@@ -323,6 +350,22 @@ to change/update from M
  git commit -m "Updated MyCode" 
  git push origin main
 
+when you didnt checked on thr readme then 
+quick setup- if you done this kind of this befor
+type this command in the terminal 
+git remote add origin link
+
+github repository-https://github.com/SumantaBhattacharya/git-info.git
+clone-git clone https://github.com/SumantaBhattacharya/git-info.git
+changes
+add-git add .
+commit- git commit -m "Updated MyCode" 
+push-git push origin main
+
+                    <--[Feature] 
+        ---()--()--()
+()--()-----()--()
+               <--[master]
 */
 
                             
