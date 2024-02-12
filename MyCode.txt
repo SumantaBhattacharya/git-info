@@ -266,6 +266,7 @@ git branch machine -M main (to rename branch )
 git checkout branch_name -> (to navigate,change branch)
 git checkout -b new_branch_name -> (to create new branch)
 git branch -d branch_name -> (to delete branch)
+git push origin --delete feature-1
 git branch -a (to get how many git branches are there in your system)
 git branch machine -M main (to rename branch )
 git branch machine -M main main
@@ -276,7 +277,8 @@ git merge <- branch name -> (to merge 2 branches)
 
 way 2
 create a PR
-
+Pull requestsIt lets you tell others about changes you have pushed to a branch in a repository on GitHub
+11
 if you want to get the differences between the two branches, then you can use the following command 
 git diff the_branch_name_that_you_want_to_comapre_with  
 
