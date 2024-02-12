@@ -248,6 +248,9 @@ add-adds new or changed files in your working directory to the Git staging area
 git add<- file name ->
 commit- it is the record of change
 git commit -m "some message"
+Push command
+push-upload local repo content to rtemote repogit push origin main
+git push origin main
 
 git clone https://github.com/SumantaBhattacharya/git-info.git
 
@@ -314,6 +317,12 @@ git add Name.txt
 git commit -m "Remove INTRO.txt"
 git branch 
 git push origin main
+
+to change/update from M 
+ git add .
+ git commit -m "Updated MyCode" 
+ git push origin main
+
 */
 
                             
